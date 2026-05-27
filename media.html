@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media — The Mansa World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">The Mansa <span>World</span></a>
+  <ul class="nav-links">
+    <li><a href="theatre.html">Theatre</a></li>
+    <li><a href="tickets.html">Tickets</a></li>
+    <li><a href="media.html" class="active">Media</a></li>
+    <li><a href="universe.html">Universe</a></li>
+    <li><a href="sponsors.html">Partners</a></li>
+  </ul>
+  <button type="button" class="nav-cta" onclick="window.location='tickets.html'">Get Tickets</button>
+  <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+  <div class="page-banner-content">
+    <p class="page-banner-eyebrow">Watch &amp; Discover</p>
+    <h1 class="page-title">Teasers, Trailers<br/>&amp; What's Coming</h1>
+    <p class="page-subtitle">Official teasers, orchestra previews, behind-the-scenes footage, and a full view of what The Mansa World has in store.</p>
+  </div>
+</div>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb1" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb1)"/></svg></div>
+
+<!-- MEDIA -->
+<section id="media">
+  <div class="reveal">
+    <p class="section-label">The Mansa World on Screen</p>
+    <h2 class="section-title">Watch the Story Unfold</h2>
+    <div class="ornament">✦ ✦ ✦</div>
+  </div>
+
+  <div class="media-tabs reveal">
+    <button type="button" class="media-tab active" onclick="switchTab('teasers',this)">Teasers &amp; Trailers</button>
+    <button type="button" class="media-tab" onclick="switchTab('upcoming',this)">Upcoming Projects</button>
+    <button type="button" class="media-tab" onclick="switchTab('behind',this)">Behind the Scenes</button>
+  </div>
+
+  <div class="media-panel active" id="panel-teasers">
+    <div class="media-grid">
+      <div class="media-card reveal">
+        <div class="media-card-bg">🎬</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Official Teaser</div>
+          <div class="media-label-title">The Trail of Lost Gold — Teaser Trailer</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🎶</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Orchestra Preview</div>
+          <div class="media-label-title">Sounds of the Sahel — Score Preview</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🌍</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">World Reveal</div>
+          <div class="media-label-title">Enter The Mansa World — Announcement</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">👑</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Character Reveal</div>
+          <div class="media-label-title">Mansa Musa — Character Reveal</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🥁</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Music</div>
+          <div class="media-label-title">The Trail Theme — Original Composition</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🎭</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Stage Preview</div>
+          <div class="media-label-title">The Stage — First Look</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-panel" id="panel-upcoming">
+    <div class="upcoming-items">
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Theatre · 2025</div>
+        <div class="upcoming-title">Sundiata: The Lion King of Mali</div>
+        <div class="upcoming-desc">The second major theatrical production. The origin story of the Mali Empire, live on stage.</div>
+        <div class="upcoming-status">In Development</div>
+      </div>
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Animation · 2025</div>
+        <div class="upcoming-title">The Mansa World: Origins</div>
+        <div class="upcoming-desc">An animated short series introducing The Mansa World's heroes, beginning with Mansa Musa's earliest days.</div>
+        <div class="upcoming-status">In Production</div>
+      </div>
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Game · TBA</div>
+        <div class="upcoming-title">Trail of Lost Gold — The Game</div>
+        <div class="upcoming-desc">An immersive strategy and adventure game set in Mali's golden age.</div>
+        <div class="upcoming-status">Coming Soon</div>
+      </div>
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Orchestra · 2025</div>
+        <div class="upcoming-title">Sounds of the Sahel — Full Concert</div>
+        <div class="upcoming-desc">A full orchestral evening blending West African tradition with contemporary arrangement.</div>
+        <div class="upcoming-status">Pre-Production</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-panel" id="panel-behind">
+    <div class="media-grid">
+      <div class="media-card reveal">
+        <div class="media-card-bg">🎨</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Costume Design</div>
+          <div class="media-label-title">Building the Wardrobe of an Empire</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🎼</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Composition</div>
+          <div class="media-label-title">Scoring the Sahel — Studio Sessions</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🏗️</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Set Design</div>
+          <div class="media-label-title">Building Timbuktu on Stage</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">💡</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Lighting &amp; Direction</div>
+          <div class="media-label-title">Lighting the Empire — Design Sessions</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">🎤</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Cast</div>
+          <div class="media-label-title">Meet the Company — Cast Interviews</div>
+        </div>
+      </div>
+      <div class="media-card reveal">
+        <div class="media-card-bg">📜</div>
+        <div class="media-play"></div>
+        <div class="media-label">
+          <div class="media-label-type">Writing</div>
+          <div class="media-label-title">The Script — From Page to Stage</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb2" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb2)"/></svg></div>
+
+<!-- SOCIAL FOLLOW -->
+<div class="social-follow">
+  <div class="social-follow-inner reveal">
+    <p class="section-label">Stay in the World</p>
+    <h2 class="section-title">Follow the Journey</h2>
+    <p>New content drops regularly — teasers, rehearsal footage, score previews, and announcements. Follow us across platforms to never miss a moment.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/themansaworld1" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+      <a href="https://www.youtube.com/@TheMansaWorld" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+      <a href="https://x.com/TheMansaWorld?s=20" target="_blank" rel="noopener noreferrer" class="social-link">Twitter / X</a>
+      <a href="https://www.tiktok.com/@themansaworld_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-link">TikTok</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">The Mansa World</div>
+    <div class="footer-tagline">Africa's Story · One Hero at a Time</div>
+  </div>
+  <div class="footer-col">
+    <h4>Productions</h4>
+    <ul>
+      <li><a href="theatre.html">The Trail of Lost Gold</a></li>
+      <li><a href="theatre.html">Sounds of the Sahel</a></li>
+      <li><a href="theatre.html">Sundiata (Coming Soon)</a></li>
+      <li><a href="tickets.html">Get Tickets</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>The Universe</h4>
+    <ul>
+      <li><a href="universe.html">Games</a></li>
+      <li><a href="universe.html">Animation</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="media.html">Media</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Connect</h4>
+    <ul>
+      <li><a href="https://www.instagram.com/themansaworld1" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://x.com/TheMansaWorld?s=20" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+      <li><a href="https://www.youtube.com/@TheMansaWorld" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      <li><a href="sponsors.html">Partners</a></li>
+      <li><a href="mailto:hello@themansaworld.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
+  </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 The Mansa World. All rights reserved.</p>
+    <p class="footer-motto">...of Glories to be told</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  function switchTab(id,btn){
+    document.querySelectorAll('.media-panel').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.media-tab').forEach(b=>b.classList.remove('active'));
+    document.getElementById('panel-'+id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>

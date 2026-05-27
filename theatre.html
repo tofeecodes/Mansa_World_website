@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theatre — The Mansa World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">The Mansa <span>World</span></a>
+  <ul class="nav-links">
+    <li><a href="theatre.html" class="active">Theatre</a></li>
+    <li><a href="tickets.html">Tickets</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="universe.html">Universe</a></li>
+    <li><a href="sponsors.html">Partners</a></li>
+  </ul>
+  <button type="button" class="nav-cta" onclick="window.location='tickets.html'">Get Tickets</button>
+  <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+  <div class="page-banner-content">
+    <p class="page-banner-eyebrow">The Main Stage</p>
+    <h1 class="page-title">Live Theatre<br/>&amp; Orchestra</h1>
+    <p class="page-subtitle">Epic theatrical productions and orchestral concerts that bring Africa's greatest stories off the page and onto the stage.</p>
+  </div>
+</div>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb1" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb1)"/></svg></div>
+
+<!-- THEATRE -->
+<section id="theatre">
+  <div class="theatre-intro reveal">
+    <p class="section-label">The Productions</p>
+    <h2 class="section-title">On Stage Now &amp; Coming</h2>
+    <div class="ornament">✦ ✦ ✦</div>
+    <p>At the heart of The Mansa World is <em>live performance</em> — epic theatrical productions and orchestral concerts that bring Africa's greatest stories off the page and onto the stage. This is where history breathes, where legend becomes flesh, and where audiences are transported across centuries of <em>untold glory</em>.</p>
+    <p>Games, animation, and merch extend this world. But the stage is where it all begins.</p>
+  </div>
+  <div class="shows-grid">
+
+    <div class="show-card featured reveal">
+      <div class="show-img show-img-cover"></div>
+      <div class="show-card-gradient"></div>
+      <div class="show-overlay"></div>
+      <div class="show-info">
+        <div class="show-type">Theatrical Production · World Premiere</div>
+        <h3 class="show-title">Mansa Musa and the Trail of Lost Gold; The Prelude<br/><span class="show-title-sub">— The Prelude —</span></h3>
+        <div class="show-meta">📍 Venue TBA &nbsp;·&nbsp; 📅 Date TBA &nbsp;·&nbsp; ⏱ ~2hrs 30min with interval</div>
+        <p class="show-desc">The flagship production. A full theatrical retelling of Mansa Musa's legendary journey — live orchestra, original costume, and an immersive stage experience unlike anything Africa's story has received before.</p>
+        <div class="show-actions">
+          <a href="tickets.html" class="btn-primary">Get Tickets</a>
+          <a href="media.html" class="btn-outline">Watch Teaser</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-card reveal">
+      <div class="show-img">🎻</div>
+      <div class="show-card-gradient"></div>
+      <div class="show-overlay"></div>
+      <div class="show-info">
+        <div class="show-type">Orchestra Concert</div>
+        <h3 class="show-title">Sounds of the Sahel</h3>
+        <div class="show-meta">📍 Venue TBA &nbsp;·&nbsp; 📅 Coming 2025</div>
+        <p class="show-desc">An original orchestral score drawing from West African musical traditions — kora, balafon, and strings united in a single breathtaking performance. An evening of pure sound and history.</p>
+        <div class="show-actions"><a href="index.html#waitlist" class="btn-outline">Join Waitlist</a></div>
+      </div>
+    </div>
+
+    <div class="show-card reveal">
+      <div class="show-img">👑</div>
+      <div class="show-card-gradient"></div>
+      <div class="show-overlay"></div>
+      <div class="show-info">
+        <div class="show-type">Theatrical Production · Coming Soon</div>
+        <h3 class="show-title">Sundiata: The Lion King of Mali</h3>
+        <div class="show-meta">📍 Venue TBA &nbsp;·&nbsp; 📅 Coming Soon</div>
+        <p class="show-desc">The next chapter — the founding legend of the Mali Empire, told live on stage. From the child who could not walk to the warrior who built a civilisation. Africa's story, one hero at a time.</p>
+        <div class="show-actions"><a href="index.html#waitlist" class="btn-outline">Get Notified</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb2" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb2)"/></svg></div>
+
+<!-- UPCOMING PRODUCTIONS -->
+<section id="upcoming">
+  <div class="upcoming-inner">
+    <div class="reveal">
+      <p class="section-label">On the Horizon</p>
+      <h2 class="section-title">What's Coming Next</h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="upcoming-items">
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Theatre · 2025</div>
+        <div class="upcoming-title">Sundiata: The Lion King of Mali</div>
+        <div class="upcoming-desc">The origin story of the Mali Empire — the second major theatrical production from The Mansa World.</div>
+        <div class="upcoming-status">In Development</div>
+      </div>
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Orchestra · 2025</div>
+        <div class="upcoming-title">Sounds of the Sahel — Full Concert</div>
+        <div class="upcoming-desc">A full orchestral evening blending West African tradition with contemporary arrangement and live performance.</div>
+        <div class="upcoming-status">Pre-Production</div>
+      </div>
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Animation · 2025</div>
+        <div class="upcoming-title">The Mansa World: Origins</div>
+        <div class="upcoming-desc">An animated short series extending the world beyond the stage — beginning with Mansa Musa's earliest days.</div>
+        <div class="upcoming-status">In Production</div>
+      </div>
+      <div class="upcoming-item reveal">
+        <div class="upcoming-tag">Game · TBA</div>
+        <div class="upcoming-title">Trail of Lost Gold — The Game</div>
+        <div class="upcoming-desc">Command the empire. An immersive strategy and adventure game set in Mali's golden age.</div>
+        <div class="upcoming-status">Coming Soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb3" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb3)"/></svg></div>
+
+<!-- TICKETS CTA -->
+<section class="section-cta">
+  <div class="section-cta-inner reveal">
+    <p class="section-label">Secure Your Seat</p>
+    <h2 class="section-title">Ready to Experience<br/>the Legend?</h2>
+    <p>Standard, VIP, and orchestra packages are available. Join the waitlist now to be first in line when tickets go on sale.</p>
+    <div class="cta-buttons">
+      <a href="tickets.html" class="btn-primary">View Tickets</a>
+      <a href="index.html#waitlist" class="btn-outline">Join the Waitlist</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">The Mansa World</div>
+    <div class="footer-tagline">Africa's Story · One Hero at a Time</div>
+  </div>
+  <div class="footer-col">
+    <h4>Productions</h4>
+    <ul>
+      <li><a href="theatre.html">The Trail of Lost Gold</a></li>
+      <li><a href="theatre.html">Sounds of the Sahel</a></li>
+      <li><a href="theatre.html">Sundiata (Coming Soon)</a></li>
+      <li><a href="tickets.html">Get Tickets</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>The Universe</h4>
+    <ul>
+      <li><a href="universe.html">Games</a></li>
+      <li><a href="universe.html">Animation</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="media.html">Media</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Connect</h4>
+    <ul>
+      <li><a href="https://www.instagram.com/themansaworld1" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://x.com/TheMansaWorld?s=20" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+      <li><a href="https://www.youtube.com/@TheMansaWorld" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      <li><a href="sponsors.html">Partners</a></li>
+      <li><a href="mailto:hello@themansaworld.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 The Mansa World. All rights reserved.</p>
+    <p class="footer-motto">...of Glories to be told</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

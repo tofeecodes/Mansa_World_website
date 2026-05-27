@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tickets — The Mansa World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">The Mansa <span>World</span></a>
+  <ul class="nav-links">
+    <li><a href="theatre.html">Theatre</a></li>
+    <li><a href="tickets.html" class="active">Tickets</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="universe.html">Universe</a></li>
+    <li><a href="sponsors.html">Partners</a></li>
+  </ul>
+  <button type="button" class="nav-cta" onclick="window.location='tickets.html'">Get Tickets</button>
+  <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+  <div class="page-banner-content">
+    <p class="page-banner-eyebrow">Book Your Seat</p>
+    <h1 class="page-title">Tickets &amp;<br/>Reservations</h1>
+    <p class="page-subtitle">Secure your place at The Trail of Lost Gold and upcoming Mansa World productions. Limited availability — join the waitlist now.</p>
+  </div>
+</div>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb1" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb1)"/></svg></div>
+
+<!-- FEATURED SHOW CONTEXT -->
+<section id="theatre" class="tickets-context">
+  <div class="tickets-context-inner">
+    <div class="reveal tickets-context-lead">
+      <p class="section-label">Now Booking</p>
+      <h2 class="section-title">The Trail of Lost Gold</h2>
+      <p>The world premiere of The Mansa World's flagship theatrical production. An epic retelling of Mansa Musa's legendary journey with live orchestra, original costumes, and a cast bringing Africa's greatest story to life.</p>
+    </div>
+    <div class="show-card featured reveal">
+      <div class="show-img show-img-cover"></div>
+      <div class="show-card-gradient"></div>
+      <div class="show-overlay"></div>
+      <div class="show-info">
+        <div class="show-type">Theatrical Production · World Premiere</div>
+        <h3 class="show-title">The Trail of Lost Gold<br/><span class="show-title-sub">— The Prelude —</span></h3>
+        <div class="show-meta">📍 Venue TBA &nbsp;·&nbsp; 📅 Date TBA &nbsp;·&nbsp; ⏱ ~2hrs 30min with interval</div>
+        <p class="show-desc">Live orchestra. Original costume. Immersive staging. An experience unlike anything Africa's story has received before.</p>
+        <div class="show-actions">
+          <a href="media.html" class="btn-outline">Watch Teaser</a>
+          <a href="theatre.html" class="btn-outline">See All Productions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+ <br/><br/>
+<section id="tickets">
+  <div class="tickets-inner">
+    <div class="reveal">
+      <p class="section-label">Choose Your Experience</p>
+      <h2 class="section-title">Select Your Ticket</h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="ticket-cards">
+
+      <div class="ticket-card reveal">
+        <div class="ticket-badge">Theatre</div>
+        <div class="ticket-show">The Trail of Lost Gold — The Prelude</div>
+        <div class="ticket-venue">Venue to be announced</div>
+        <div class="ticket-date">📅 Date TBA · Evening Performance</div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-price">Standard <span>from</span></div>
+        <div class="ticket-note ticket-note-gold">On Sale Soon</div>
+        <a href="index.html#waitlist" class="btn-primary btn-block">Join Waitlist</a>
+      </div>
+
+      <div class="ticket-card ticket-card-vip reveal">
+        <div class="ticket-badge ticket-badge-vip">VIP · Premium</div>
+        <div class="ticket-show">The Trail of Lost Gold — VIP Experience</div>
+        <div class="ticket-venue">Pre-show reception · Exclusive programme</div>
+        <div class="ticket-date">📅 Date TBA · Limited Availability</div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-price">VIP <span>premium</span></div>
+        <div class="ticket-note ticket-note-gold">Exclusive Access</div>
+        <a href="index.html#waitlist" class="btn-primary btn-block">Reserve VIP</a>
+      </div>
+
+      <div class="ticket-card reveal">
+        <div class="ticket-badge">Orchestra</div>
+        <div class="ticket-show">Sounds of the Sahel</div>
+        <div class="ticket-venue">Venue to be announced</div>
+        <div class="ticket-date">📅 Coming 2025 · Full Evening</div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-price">Orchestra <span>from</span></div>
+        <div class="ticket-note ticket-note-gold">Pre-Registration Open</div>
+        <a href="index.html#waitlist" class="btn-outline btn-block">Register Interest</a>
+      </div>
+
+    </div>
+    <p class="group-note reveal">
+      Group bookings, school programmes &amp; corporate partnerships available —
+      <a href="mailto:tickets@themansaworld.com">contact us</a>
+    </p>
+  </div>
+</section>
+<br/><br/>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb2" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb2)"/></svg></div>
+
+<!-- GROUP BOOKINGS -->
+<br/><br/>
+<br/><br/>
+<section id="groups">
+  <div class="tickets-inner">
+    <div class="reveal">
+      <p class="section-label">Special Bookings</p>
+      <h2 class="section-title">Groups, Schools<br/>&amp; Corporate</h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="group-bookings reveal">
+      <div class="group-card">
+        <div class="group-card-icon">🎓</div>
+        <h3>School &amp; Education Groups</h3>
+        <p>Bring history to life for your students. We offer curriculum-aligned group packages for schools, colleges, and educational institutions — including pre-show study materials and post-show Q&amp;A sessions with the creative team.</p>
+        <a href="mailto:education@themansaworld.com">Enquire about school bookings →</a>
+      </div>
+      <div class="group-card">
+        <div class="group-card-icon">🏢</div>
+        <h3>Corporate &amp; Private Events</h3>
+        <p>Host an unforgettable evening for your team or clients. Private viewings, sponsored performances, and exclusive reception packages are available for corporate partners and organisations.</p>
+        <a href="mailto:corporate@themansaworld.com">Enquire about corporate packages →</a>
+      </div>
+      <div class="group-card">
+        <div class="group-card-icon">👥</div>
+        <h3>Group Discounts</h3>
+        <p>Groups of 10 or more qualify for discounted tickets across all categories. Perfect for community organisations, cultural groups, and family gatherings. Contact our box office to arrange group rates.</p>
+        <a href="mailto:tickets@themansaworld.com">Contact the box office →</a>
+      </div>
+      <div class="group-card">
+        <div class="group-card-icon">🌍</div>
+        <h3>Diaspora &amp; Community</h3>
+        <p>Special outreach pricing available for African diaspora community organisations and cultural associations. We believe this story belongs to everyone — reach out to learn more about our community access programme.</p>
+        <a href="mailto:community@themansaworld.com">Learn about community access →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<br/><br/>
+<br/><br/>
+
+<!-- BAND -->
+<div class="sahel-band"><svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="sb3" x="0" y="0" width="60" height="28" patternUnits="userSpaceOnUse"><polygon points="30,4 38,14 30,24 22,14" fill="none" stroke="#C8892A" stroke-width="0.8"/><circle cx="0" cy="14" r="1.5" fill="#C8892A"/><circle cx="60" cy="14" r="1.5" fill="#C8892A"/><line x1="0" y1="2" x2="60" y2="2" stroke="#9E7A45" stroke-width="0.5"/><line x1="0" y1="26" x2="60" y2="26" stroke="#9E7A45" stroke-width="0.5"/></pattern></defs><rect width="1200" height="28" fill="url(#sb3)"/></svg></div>
+
+<!-- WAITLIST CTA -->
+<section class="section-cta">
+  <div class="section-cta-inner reveal">
+    <p class="section-label">Don't Miss Out</p>
+    <h2 class="section-title">Be First in Line<br/>When We Open</h2>
+    <p>Tickets are not yet on sale — but you can secure your place in the queue right now. Join our waitlist and be notified the moment booking opens.</p>
+    <div class="cta-buttons">
+      <a href="index.html#waitlist" class="btn-primary">Join the Waitlist</a>
+      <a href="theatre.html" class="btn-outline">Explore the Productions</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">The Mansa World</div>
+    <div class="footer-tagline">Africa's Story · One Hero at a Time</div>
+  </div>
+  <div class="footer-col">
+    <h4>Productions</h4>
+    <ul>
+      <li><a href="theatre.html">The Trail of Lost Gold</a></li>
+      <li><a href="theatre.html">Sounds of the Sahel</a></li>
+      <li><a href="theatre.html">Sundiata (Coming Soon)</a></li>
+      <li><a href="tickets.html">Get Tickets</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>The Universe</h4>
+    <ul>
+      <li><a href="universe.html">Games</a></li>
+      <li><a href="universe.html">Animation</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="media.html">Media</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Connect</h4>
+    <ul>
+      <li><a href="https://www.instagram.com/themansaworld1" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://x.com/TheMansaWorld?s=20" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+      <li><a href="https://www.youtube.com/@TheMansaWorld" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      <li><a href="sponsors.html">Partners</a></li>
+      <li><a href="mailto:hello@themansaworld.com" target="_blank" rel="noopener noreferrer">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 The Mansa World. All rights reserved.</p>
+    <p class="footer-motto">...of Glories to be told</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
