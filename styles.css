@@ -370,3 +370,69 @@ footer{position:relative;z-index:1;border-top:1px solid rgba(200,137,42,.1);padd
 @media(max-width:600px){
   .ticket-cards,.media-grid,.universe-grid,.merch-grid,.upcoming-items,.coming-grid,.hub-grid{grid-template-columns:1fr;}
 }
+
+/* ─────────────────────────────────────────────────
+   ABOUT PAGE — paste this block into styles.css
+   anywhere after the existing /* UTILITY */ block
+───────────────────────────────────────────────── */
+
+/* ABOUT — section wrapper */
+#about{position:relative;z-index:1;padding:6rem 2rem 5rem;max-width:1200px;margin:0 auto;}
+.about-inner{max-width:1100px;margin:0 auto;}
+.about-intro{max-width:760px;margin-bottom:5rem;}
+.about-intro p{font-size:1.22rem;line-height:1.95;font-weight:300;color:rgba(238,224,196,.82);margin-bottom:1.2rem;}
+.about-intro strong{color:var(--gold-light);font-weight:600;}
+
+/* VISION BLOCK — two-column quote + text */
+.vision-block{margin-bottom:0;}
+.vision-block-inner{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(200,137,42,.12);}
+.vision-quote{background:rgba(44,29,14,.6);padding:4rem 3rem;}
+.vision-quote blockquote{font-family:'Cinzel Decorative',serif;font-size:clamp(.95rem,1.8vw,1.45rem);line-height:1.65;color:var(--white);}
+.vision-quote blockquote em{color:var(--gold-light);font-style:normal;}
+.vision-quote cite{display:block;margin-top:1.5rem;font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);}
+.vision-body{background:var(--obsidian);padding:4rem 3rem;}
+.vision-body p{font-size:1.05rem;line-height:1.95;font-weight:300;color:rgba(238,224,196,.8);margin-bottom:1.2rem;}
+.vision-body p:last-child{margin-bottom:0;}
+.vision-body strong{color:var(--sand-light);}
+
+/* PLATFORM — reuses .universe-grid / .universe-card (already in styles.css) */
+#platform{position:relative;z-index:1;background:linear-gradient(to bottom,transparent,rgba(44,29,14,.6) 20%,rgba(44,29,14,.6) 80%,transparent);padding:6rem 2rem;}
+
+/* CREATED — reuses .upcoming-inner / .upcoming-items / .upcoming-item */
+#created{position:relative;z-index:1;padding:6rem 2rem;}
+
+/* STATS BAND */
+.stats-band{position:relative;z-index:1;background:rgba(44,29,14,.65);border-top:1px solid rgba(200,137,42,.15);border-bottom:1px solid rgba(200,137,42,.15);padding:4rem 2rem;}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(200,137,42,.1);}
+.stat-item{background:var(--obsidian);padding:2.5rem 2rem;text-align:center;}
+.stat-number{font-family:'Cinzel Decorative',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--gold-light);display:block;margin-bottom:.4rem;}
+.stat-label{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);}
+
+/* JOURNEY — reuses .group-bookings / .group-card (already in styles.css) */
+#journey{position:relative;z-index:1;padding:6rem 2rem;}
+
+/* CREATIVE FORCE */
+#force{position:relative;z-index:1;padding:6rem 2rem;}
+.force-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3.5rem;}
+.force-card{padding:2.5rem 2rem;border:1px solid rgba(200,137,42,.12);background:rgba(8,7,5,.4);transition:border-color .3s,transform .3s;}
+.force-card:hover{border-color:rgba(200,137,42,.35);transform:translateY(-3px);}
+.force-number{font-family:'Cinzel Decorative',serif;font-size:3rem;color:rgba(200,137,42,.18);line-height:1;margin-bottom:.3rem;}
+.force-card-label{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;}
+.force-card h3{font-family:'Cinzel',serif;font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;color:var(--white);margin-bottom:.8rem;}
+.force-card p{font-size:1rem;line-height:1.8;color:rgba(238,224,196,.65);font-weight:300;}
+.force-card strong{color:var(--sand-light);}
+
+/* WHY — reuses .partnership-benefits-inner / .benefits-grid / .benefit-card */
+#why{position:relative;z-index:1;padding:6rem 2rem;text-align:center;}
+#why .partnership-benefits-inner{max-width:1100px;margin:0 auto;}
+
+/* ABOUT RESPONSIVE */
+@media(max-width:900px){
+  .vision-block-inner{grid-template-columns:1fr;}
+  .stats-inner{grid-template-columns:1fr 1fr;}
+  .force-grid{grid-template-columns:1fr;}
+  .vision-quote,.vision-body{padding:2.5rem 2rem;}
+}
+@media(max-width:600px){
+  .stats-inner{grid-template-columns:1fr 1fr;}
+}
