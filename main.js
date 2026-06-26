@@ -15,3 +15,28 @@ if(ham){
   ham.addEventListener('click',()=>{ham.classList.toggle('open');navList.classList.toggle('open');});
   document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');navList.classList.remove('open');}));
 }
+
+// SPONSOR MODAL
+function openSponsorModal(el) {
+  document.getElementById('modalName').textContent = el.dataset.name || '';
+  document.getElementById('modalDesc').textContent = el.dataset.desc || '';
+  const link = document.getElementById('modalLink');
+  if (el.dataset.link) {
+    link.href = el.dataset.link;
+    link.style.display = 'inline-block';
+  } else {
+    link.style.display = 'none';
+  }
+  const img = el.querySelector('img');
+  const logoDiv = document.getElementById('modalLogo');
+  logoDiv.innerHTML = img ? `<img src="${img.src}" alt="${img.alt}" />` : '';
+  document.getElementById('sponsorModal').classList.add('active');
+}
+
+function closeSponsorModal(e) {
+  if (!e || e.target === document.getElementById('sponsorModal')) {
+    document.getElementById('sponsorModal').classList.remove('active');
+  }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSponsorModal(); });
